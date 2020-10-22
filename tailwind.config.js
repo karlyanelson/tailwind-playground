@@ -4,11 +4,16 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: [
-    'src/**/*.html'
+    'src/**/*.html',
+    'src/**/*.css',
   ],
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
+  experimental: {
+    darkModeVariant: true
+  },
+  dark: 'class',
 }

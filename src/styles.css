@@ -5,5 +5,9 @@
 @tailwind utilities;
 
 body {
-  @apply text-blue-700
+  @apply text-blue-700;
+}
+
+.dark body {
+  @apply text-blue-300;
 }
