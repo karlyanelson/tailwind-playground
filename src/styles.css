@@ -1,13 +1,28 @@
+:root {
+  --theme-light-action: #0022ff;
+  --theme-dark-action: #8691dc;
+
+  --theme-light-ink: #000000;
+  --theme-dark-ink: #ffffff;
+
+  --theme-light-bg: #ffffff;
+  --theme-dark-bg: #000000;
+}
+
+body {
+  --action: var(--theme-light-action);
+  --ink: var(--theme-light-ink);
+  --bg: var(--theme-light-bg);
+}
+
+.dark body {
+  --action: var(--theme-dark-action);
+  --ink: var(--theme-dark-ink);
+  --bg: var(--theme-dark-bg);
+}
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
-
-body {
-  @apply text-blue-700;
-}
-
-.dark body {
-  @apply text-blue-300;
-}

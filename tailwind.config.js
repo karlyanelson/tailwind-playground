@@ -3,17 +3,20 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [
-    'src/**/*.html',
-    'src/**/*.css',
-  ],
+  purge: ["src/**/*.html", "src/**/*.css"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        action: "var(--action)",
+        ink: "var(--ink)",
+        bg: "var(--bg)",
+      },
+    },
   },
   variants: {},
   plugins: [],
   experimental: {
-    darkModeVariant: true
+    darkModeVariant: true,
   },
-  dark: 'class',
-}
+  dark: "class",
+};
