@@ -1,12 +1,13 @@
 :root {
+  /* Action */
   --theme-light-action: #0022ff;
   --theme-dark-action: #8691dc;
-
-  --theme-light-ink: #000000;
+  /* Ink */
+  --theme-light-ink: #1b1b1b;
   --theme-dark-ink: #ffffff;
-
+  /* Bg */
   --theme-light-bg: #ffffff;
-  --theme-dark-bg: #000000;
+  --theme-dark-bg: #1b1b1b;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
   --bg: var(--theme-light-bg);
 }
 
-.dark body {
+body.dark {
   --action: var(--theme-dark-action);
   --ink: var(--theme-dark-ink);
   --bg: var(--theme-dark-bg);
