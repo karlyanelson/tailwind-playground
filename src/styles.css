@@ -1,3 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 :root {
   /* Action */
   --theme-light-action: #0022ff;
@@ -21,9 +27,3 @@ body.dark {
   --ink: var(--theme-dark-ink);
   --bg: var(--theme-dark-bg);
 }
-
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
