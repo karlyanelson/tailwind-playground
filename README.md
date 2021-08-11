@@ -2,7 +2,7 @@
 
 A basic project showcasing [Tailwind](https://tailwindcss.com/) to help you get started.
 
-It's bundled using [Parcel](https://parceljs.org/), which comes with PostCSS and a nice local server and all that [jazz](https://www.youtube.com/watch?v=5WMUYVjJGh0).
+It's bundled using [Parcel](https://parceljs.org/), which comes with PostCSS and a nice local server and all that [jazz](https://www.youtube.com/watch?v=mqDOQzfM5Kc).
 
 ## Install dependencies
 
