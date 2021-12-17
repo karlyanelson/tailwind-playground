@@ -31,17 +31,29 @@ content: ["src/**/*.html", "src/**/*.css"],
 
 Right now I just have it set up to look at html and css files.
 
-Parcel is set to compile `src/index.html` as its input file, which is configured in the `source` object of the `package.json`:
+Parcel is set to compile `src/index.html` as its entry file, which is configured in the `source` object of the `package.json`:
 
 ```json
 "source": "src/index.html",
 ```
 
-If you have add other pages of html files in the `src` folder, you can use `*` to specify any file ending in `.html`, in any folder `/**/`, ie:
+If you have other files you'd like parcel to parse, you can add those to the `source` array:
 
 ```json
-"source": "src/index.html src/**/*.html",
+"source": ["src/index.html 'src/page/index.html'"],
 ```
+
+If you want to use globs (`*`) to specify any file ending in `.html`, in any folder `/**/`, instead of using `source`, add your entry files to your `build` and `start` scripts:
+
+```json
+  "scripts": {
+    "start": "parcel src/index.html src/**/*.html",
+    "build": "parcel build src/index.html src/**/*.html",
+  },
+
+```
+
+Read more about [specifying entries in the Parcel docs](https://parceljs.org/features/targets/#entries)
 
 ## Run the app locally
 
@@ -63,7 +75,7 @@ To build the app for production locally, you can just use `npm` as a task runner
 npm run build
 ```
 
-To build the app for production using a CI pipeline or something like [Netlify](https://www.netlify.com/), you'd supply the contents of the `build` script. For example, in Netlify, in your Build & Deploy > Continuous Deployment > Build Settings, you would set your Build command to `parcel build`
+To build the app for production using a CI pipeline or something like [Netlify](https://www.netlify.com/), you'd supply the contents of the `build` script. For example, in Netlify, in your Build & Deploy > Continuous Deployment > Build Settings, you would set your Build command to `parcel build`, or `parcel build src/index.html` if you include entry files in your build script.
 
 ### Note: Building before Tailwind 3.0:
 
