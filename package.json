@@ -14,7 +14,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "clean": "rm -rf dist && rm -rf .cache"
+    "clean": "rm -rf dist && rm -rf .parcel-cache"
   },
   "repository": {
     "type": "git",
