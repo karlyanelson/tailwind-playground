@@ -12,8 +12,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "source": "src/index.html",
   "scripts": {
-    "start": "NODE_ENV=development parcel",
-    "build": "NODE_ENV=production parcel build",
+    "start": "parcel",
+    "build": "parcel build",
     "clean": "rm -rf dist && rm -rf .cache"
   },
   "repository": {
